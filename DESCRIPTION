@@ -1,0 +1,20 @@
+Package: webviewer
+Title: View outputs in a locally hosted website
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Doug",
+           family = "Kelkhoff",
+           role = c("aut", "cre"),
+           email = "doug.kelkhoff@gmail.com")
+Description: View outputs in a locally hosted website.
+License:
+    MIT + file LICENSE
+Imports:
+    httpuv,
+    htmltools,
+    jsonlite,
+    mime
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
