@@ -1,4 +1,9 @@
-# `webviewer`
+# `webviewer` :warning: SUPERCEDED :warning:
+
+> :warning: The package 
+> [httpgd](https://github.com/nx10/httpgd) which does everything I was looking
+> for. I don't have any plans to develop this further knowing that there is
+> such a brilliant solution already out there. 
 
 An R package to host an output viewer as a locally hosted website. 
 
