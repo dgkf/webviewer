@@ -44,20 +44,16 @@ viewer_app$show(f)
 Example of Rmarkdown rendering, automatically picking up a shiny-hosted viewer
 
 ```r
-requireNamespace("rmarkdown", quietly = TRUE)
-requireNamespace("knitr", quietly = TRUE)
-
-rmarkdown::run(system.file("examples", "knitr-minimal.html", package = "knitr"))
+library(rmarkdown)
+run(system.file("examples", "knitr-minimal.Rmd", package = "knitr"))
 ```
 
 Example of Rmarkdown rendering, showing an html file by passing a file name
 
 ```r
-requireNamespace("rmarkdown", quietly = TRUE)
-requireNamespace("knitr", quietly = TRUE)
-
-viewer_app$show(rmarkdown::render(
-  system.file("examples", "knitr-minimal.html", package = "knitr"), 
+library(rmarkdown)
+viewer_app$show(render(
+  system.file("examples", "knitr-minimal.Rmd", package = "knitr"), 
   "html_document"
 ))
 ```
@@ -65,15 +61,15 @@ viewer_app$show(rmarkdown::render(
 Example automatically launching a shiny app viewer
 
 ```r
-requireNamespace("shiny", quietly = TRUE)
-shiny::runApp(system.file("examples", "01_hello", package = "shiny"))
+library(shiny)
+runApp(system.file("examples", "01_hello", package = "shiny"))
 ```
 
 Example showing interactive plots using plotly
 
 ```r
-requireNamespace("plotly", quietly = TRUE)
-plotly::plot_ly(iris, x = ~Sepal.Width, y = ~Sepal.Length)
+library(plotly)
+plot_ly(iris, x = ~Sepal.Width, y = ~Sepal.Length)
 ```
 
 ## Device Setup
