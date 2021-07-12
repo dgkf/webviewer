@@ -2,6 +2,8 @@
 
 An R package to host an output viewer as a locally hosted website. 
 
+![Demo](https://user-images.githubusercontent.com/18220321/125220415-85e27e00-e27b-11eb-8679-4195a3977888.gif)
+
 # Use Case
 
 Outside of all-inclusive IDEs (RStudio), viewing outputs can be inconsistent.
